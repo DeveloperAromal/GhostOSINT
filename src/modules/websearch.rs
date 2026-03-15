@@ -2,7 +2,7 @@ use reqwest;
 use scraper::{Html, Selector};
 
 pub async fn search(query: &str) -> Result<Vec<(String, String, String)>, reqwest::Error> {
-    
+
     let encoded = query.replace(" ", "+");
     let url = format!("https://html.duckduckgo.com/html/?q={}", encoded);
 
@@ -40,4 +40,5 @@ pub async fn search(query: &str) -> Result<Vec<(String, String, String)>, reqwes
     }
 
     Ok(results)
+
 }
