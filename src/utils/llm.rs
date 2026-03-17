@@ -6,9 +6,6 @@ use crate::config::settings::Settings;
 
 pub async fn llm(prompt: &str) -> Result<String, Box<dyn std::error::Error>> {
 
-
-    let settings = Settings::load();
-
     let settings = Settings::load();
 
     let url = format!(
