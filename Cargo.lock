@@ -813,6 +813,8 @@ dependencies = [
  "colored",
  "dotenv",
  "langchain-rust",
+ "rand 0.8.5",
+ "regex",
  "reqwest 0.12.28",
  "scraper 0.18.1",
  "serde",
